@@ -1,0 +1,46 @@
+/*  
+    Control the size of the html popup, we'll need to edit this to 
+    make bigger for left side right side space so it's presentable 
+*/
+
+body {
+    width: 290px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+
+ 
+  .button {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .button1 {
+    background-color: #007bff;
+    color: rgb(255, 255, 255); 
+  }
+
+  .button1:hover {
+    background-color: #17cb26;
+    color: rgb(255, 255, 255); 
+  }
+
+  .button2 {
+    background-color: #007bff;
+    color: rgb(255, 255, 255); 
+  }
+  
+  .button2:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255); 
+
+  }
