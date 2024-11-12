@@ -5,42 +5,77 @@
       Not sure why didn't work when removed it ? 
       https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive 
   -->
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phishing Checker 5000</title>
-    <link rel = "stylesheet" href = "./css/styles.css"> 
-  </head>
-  <body>
-    <div class="row">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-      <h2>Name: </h2>
-      <h2>Email: </h2>
-      <h2>Link: </h2>
-  
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Checker 5000</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="row">
   </div>
-      <div class="column" style="background-color:#ffffff;"> 
-        <h2>Do you want to continue?</h2>
-        <button class="button button1">Yes, go to the link</button>
-        <button class="button button2">No, stay here</button>
-      </div>
-      <div class="column" style="background-color:#ffffff;">
-        <!-- Can make it paragraph look or keep numbered-->
-        <h2>What to look out for in Emails?</h2>
-        <p>1. Phising Protection Cheat Sheet</p>
-        <p>2. Phising Protection Cheat Sheet</p>
-        <p>3. Phising Protection Cheat Sheet</p>
-        <p>4. Phising Protection Cheat Sheet</p>
-        <p>5. Phising Protection Cheat Sheet</p>
-        <p>6. Phising Protection Cheat Sheet</p>
-        <p>7. Phising Protection Cheat Sheet</p>
-        <p>ETC ETC ETC ETC ETC ETC ETC ETC ETC</p>
-      </div>
-    </div>
-    <script src="./scripts/popup.js"></script>
-  </body>
-  </html>
+  <div class="column" style="background-color:#ffffff;">
+    <h2>Name: </h2>
+    <h2>Email: </h2>
+    <h2>Link: </h2>
+
+  </div>
+  </div>
+  <div class="column" style="background-color:#ffffff;">
+    <h2>Do you want to continue?</h2>
+    <button class="button button1">Yes, go to the link</button>
+    <button class="button button2">No, stay here</button>
+  </div>
+  <div class="column" style="background-color:#ffffff;">
+    <!-- Can make it paragraph look or keep numbered-->
+    <h2>What to look out for in Emails?</h2>
+    <p><b>1. Check if the sender is using a public domain.</b></p>
+          Most companies will use their own domain (the portion of the email after @).
+          So if an email is supposedly sent from an organization but they use a public
+          domain such as @gmail.com, @outlook.com, @yahoo.com, etc., instead of their
+          own domain, then it is likely not a legitimate email.
+    <p><b>2. Check the sender’s email address for any typos or misspellings.</b></p>
+          Scammers will often use email addresses that appear to look very similar
+          to those of known companies and entities. User’s should carefully check
+          the sender’s email address for any subtle typos or misspellings, as that
+          is a tell-tale sign that the email is a phishing attempt.
+    <p><b>3. Check the Reply-To email address.</b></p>
+          In some cases, the sender’s email address itself may look legitimate, but
+          that email address may not match the Reply-To email address. Always check
+          for inconsistencies between the sender’s email address and the Reply-To address.
+    <p><b>4. Check the Return-Path email address.</b></p>
+          Inconsistencies between the sender’s email address and the Return-Path email
+          address is also another sign to look out for to avoid phishing attempts.
+          The Return-Path of an email is a hidden header which informs email servers where
+          to send any error messages or "bounces" back to the original sender.<br>
+          To check the Return-Path for an email in Gmail, click on the 3 dots on the
+          top right corner of the email message, and click on “Show Original”, and the
+          “Return-Path” can be found on that page.
+    <p><b>5. If a link in an email looks suspicious, copy the link and see if it appears
+          in any online phishing databases such as <a href="https://phishtank.org/">PhishTank</a>
+          or the the <a href="https://github.com/mitchellkrogza/Phishing.Database?tab=readme-ov-file">Phishing
+          Database</a> GitHub repository.</b></p>
+          PhishTank is a site that allows users to verify suspicious links, and add suspected
+          phishing sites to the "tank" to expand their database.
+    <p><b>6. Beware of emails that invoke a sense of urgency.</b></p>
+          Many phishing emails will scare the receiver by invoking a sense of urgency or
+          time-sensitivity in the email itself. Scammers then take advantage of the
+          receiver’s sense of panic in these scenarios and expect them to click on provided
+          links or attachments, which could potentially contain malicious code, without a
+          second thought. When in doubt, do not download attachments provided through email.
+    <p><b>7. Beware of emails that contain confidential data requests.</b></p>
+    If an email is supposedly sent by an organization and contains a request for
+    sensitive information or credentials and links to a site to enter or update said
+    information, avoid clicking the link in the email, and instead manually search up
+    the organization’s official website and log-in there. This is also a situation
+    where PhishTank could come in handy.
+  </div>
+  </div>
+  <script src="./scripts/popup.js"></script>
+</body>
+
+</html>
