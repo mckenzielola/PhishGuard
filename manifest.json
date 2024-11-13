@@ -3,12 +3,13 @@
   "version": "0.1",
   "manifest_version": 3,
   "description": "Like a life saver, gives you a second chance",
-  "permissions": ["tabs", "activeTab", "scripting"],
+  "permissions": ["identity", "tabs", "activeTab", "scripting", "storage"],
   "content_scripts": [
       {
           "matches": ["*://mail.google.com/*"],
           "js": ["./scripts/content.js"],
-          "css" : ["./css/styles.css"]
+          "css" : ["./css/styles.css"],
+          "run_at": "document_idle"
       }
   ],
   "background": {
@@ -22,7 +23,17 @@
       "16": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
-      
     }
+  }, 
+  "oauth2": {
+    "client_id": "828567801604-0m8vkl1cbfkejpdvobj09gctq8kkn7mf.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.addons.current.message.action",
+      "https://www.googleapis.com/auth/gmail.labels",
+      "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
+      "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+      "https://www.googleapis.com/auth/gmail.metadata"
+    ]
   }
 }

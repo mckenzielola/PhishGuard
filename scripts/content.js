@@ -18,4 +18,3 @@ function clickFunction(event) {
   
   document.addEventListener("click", clickFunction);
   
-  
