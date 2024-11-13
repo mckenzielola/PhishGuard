@@ -1,8 +1,8 @@
 { 
-  "name": "Phising Life Saver",
+  "name": "Phishing Life Saver",
   "version": "0.1",
   "manifest_version": 3,
-  "description": "Like a life saver, gives you a second chance",
+  "description": "Like a lifesaver, gives you a second chance",
   "permissions": ["tabs", "activeTab", "scripting"],
   "content_scripts": [
       {
