@@ -1,35 +1,35 @@
-<!--    
+  <!--    
       TODO...
       keep sides seperate (Buttons vs Knowledge). 
       Set background color to white so that its hidden
       Not sure why didn't work when removed it ? 
       https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive 
   -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phishing Checker 5000</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-
-<body>
-  <div class="row">
-  </div>
-  <div class="column" style="background-color:#ffffff;">
-    <h2>Name: </h2>
-    <h2>Email: </h2>
-    <ul id="emailList"></ul>
-    <h2>Link: </h2>
-
-  </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Checker 5000</title>
+    <link rel = "stylesheet" href = "./css/styles.css"> 
+  </head>
+  <body>
+    <div class="row">
+    </div>
+    <div class="column" style="background-color:#ffffff;">
+      <h2><span id="namePlace">Name:</span> <span id="name"></span></h2>
+      <h2><span id="emailPlace">Email:</span> <span id="email"></span></h2>
+      <h2><span id="linkPlace">Link:</span> <span id="link"></span></h2>
+      
+    </div>
   </div>
   <div class="column" style="background-color:#ffffff;">
     <h2>Do you want to continue?</h2>
     <button class="button button1">Yes, go to the link</button>
     <button class="button button2">No, stay here</button>
+    <button class="button button3">Unsure? Check Link on 3rd Party</button>
+    <p><b> Even though a url shows no signs of malicious activity it's important to remain watchful when clicking links... <p><b>
+
   </div>
   <div class="column" style="background-color:#ffffff;">
     <!-- Can make it paragraph look or keep numbered-->
@@ -57,9 +57,10 @@
           top right corner of the email message, and click on “Show Original”, and the
           “Return-Path” can be found on that page.
     <p><b>5. If a link in an email looks suspicious, copy the link and see if it appears
-          in any online phishing databases such as <a href="https://phishtank.org/">PhishTank</a>
-          or the the <a href="https://github.com/mitchellkrogza/Phishing.Database?tab=readme-ov-file">Phishing
-          Database</a> GitHub repository.</b></p>
+          in any online phishing databases such as 
+          <a href="https://phishtank.org/" target="_blank" rel="noopener noreferrer">PhishTank</a>
+          or the the 
+          <a href="https://github.com/mitchellkrogza/Phishing.Database?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" >PhishingDatabase</a> GitHub repository.</b></p>
           PhishTank is a site that allows users to verify suspicious links, and add suspected
           phishing sites to the "tank" to expand their database.
     <p><b>6. Beware of emails that invoke a sense of urgency.</b></p>
@@ -77,6 +78,6 @@
   </div>
   </div>
   <script src="./scripts/popup.js"></script>
-</body>
-
-</html>
+  </body>
+  
+  </html>
