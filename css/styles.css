@@ -4,7 +4,7 @@
 */
 
 body {
-    width: 290px;
+    width: 320px;
     padding: 10px;
     font-family: Arial, sans-serif;
   }
@@ -43,4 +43,34 @@ body {
     background-color: #ff0000;
     color: rgb(255, 255, 255); 
 
+  }
+  .button3 {
+    background-color: #16d0ff;
+    color: rgb(255, 255, 255); 
+  }
+  
+  .button3:hover {
+    background-color: #00f7ff;
+    color: rgb(255, 255, 255); 
+
+  }
+  
+  /*
+  Allow values to wrap, this fixes the link escaping popup
+  */
+
+  #link {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+  }
+  #email {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+  }
+  #name {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
   }
